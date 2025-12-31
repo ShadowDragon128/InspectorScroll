@@ -8,8 +8,8 @@ namespace InspectorScroll
     {
         public override string Name => "InspectorScroll";
         public override string Author => "art0007i";
-        public override string Version => "2.0.0";
-        public override string Link => "https://github.com/art0007i/InspectorScroll/";
+        public override string Version => "3.0.0";
+        public override string Link => "https://github.com/ShadowDragon128/InspectorScroll/";
 
 		[AutoRegisterConfigKey]
 		public static ModConfigurationKey<float> KEY_SPEED = new ModConfigurationKey<float>("scroll_speed", "How fast you scroll, default is 120.", () => 120);
@@ -17,7 +17,7 @@ namespace InspectorScroll
 
         public override void OnEngineInit()
         {
-            Harmony harmony = new Harmony("me.art0007i.InspectorScroll");
+            Harmony harmony = new Harmony("usmx.ShadowAPI.InspectorScroll");
             harmony.PatchAll();
 			config = GetConfiguration();
         }
